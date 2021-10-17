@@ -1,0 +1,38 @@
+.siteNav {
+  display: flex;
+}
+.siteNavList {
+  display: flex;
+  list-style: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.item {
+  margin-right: 50px;
+}
+.link {
+  position: relative;
+
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: #4d1010;
+
+  text-decoration: none;
+}
+.linkActive {
+  position: relative;
+
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: blue;
+}
+.hrShadow {
+  margin: 0;
+  padding-bottom: 0;
+  height: 10px;
+  border: none;
+  border-top: 1px solid #333;
+  box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}

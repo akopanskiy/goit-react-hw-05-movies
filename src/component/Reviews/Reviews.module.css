@@ -1,0 +1,14 @@
+.reviews {
+  list-style: none;
+}
+.reviewsName {
+  font-weight: 600;
+  font-size: 20px;
+  color: rgba(238, 16, 16, 0.815);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.reviewsDescr {
+  margin: 0;
+  padding-bottom: 5px;
+}

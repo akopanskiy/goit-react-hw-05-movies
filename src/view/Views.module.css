@@ -1,0 +1,18 @@
+.rounded {
+  padding: 0;
+  list-style: none;
+}
+.items {
+  padding: 6px;
+}
+.items:before {
+  padding-right: 10px;
+  font-weight: bold;
+  color: #77aedb;
+  content: '\2606';
+  transition-duration: 0.5s;
+}
+.items:hover:before {
+  color: #337ab7;
+  content: '\2605';
+}
