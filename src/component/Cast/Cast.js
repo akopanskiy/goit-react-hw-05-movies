@@ -11,6 +11,19 @@ const Cast = ({ movieId }) => {
     fetchCast(movieId).then(response => setCast(response.data.cast));
   }, [movieId]);
 
+  useEffect(() => {
+    if (cast !== []) {
+      scrollWindow();
+    }
+  }, [cast]);
+
+  const scrollWindow = () => {
+    window.scrollBy({
+      top: document.documentElement.clientHeight,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <>
       <ul className={styles.cast}>
@@ -33,9 +46,7 @@ const Cast = ({ movieId }) => {
     </>
   );
 };
-// Cast.defaultProps = {
-//   profile_path: defaultImg,
-// };
+
 Cast.propTypes = {
   movieId: PropTypes.string.isRequired,
 };
